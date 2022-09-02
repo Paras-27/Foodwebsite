@@ -1,0 +1,142 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variables  */
+:root{
+    --navbar-height:57px;
+}
+
+/* Navigation bar modification   */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* logo and image  */
+
+#logo{
+    margin: 3px 36px;
+}
+#logo img{
+    margin:4px 7px;
+    height: 70px;
+}
+/* navigation bar list styling  */
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    margin: 13px;
+    padding:10px;
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    display: block;
+    font-size: 1.4rem;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 15px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url(../img/spaghetti-g5c8b7d8fb_1920.jpg) no-repeat center center/cover;
+    height: 552px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;   
+}
+#home h1{
+    color:white;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Services section  */
+#services{
+    display: flex;
+    margin: 24px 31px
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 7px;
+    background-color: #ffc4c4;
+    border-radius: 23px;
+}
+
+#services .box img{
+    height: 158px;
+    margin: auto;
+    display: block;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color:white;
+    padding:12px 3px;
+}
+
+/* utility classes  */
+.h-primary{
+    font-size: 2.9rem;
+    padding: 13px;
+}
+.h-secondary{
+    font-size: 1.9rem;
+    padding: 13px;
+}
+.center{
+    text-align: center;
+}
+.btn {
+    padding: 14px 22px;
+    border-radius: 26px;
+    background-color: brown;
+    color: white;
+    margin: 27px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.btn:hover {
+    color: black;
+    background-color: rgb(202, 151, 109);
+}
